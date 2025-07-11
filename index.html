@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+</head>
+
+<body>
+
+  <!-- Background Images -->
+  <img class="main_bg" src="assets/images/background-desktop.png" alt="main_bg">
+  <img class="bg_lines" src="assets/images/pattern-lines.svg" alt="bg_lines">
+  <img class="logo_full" src="assets/images/logo-full.svg" alt="logo_full">
+  <img class="bg_line_topright" src="assets/images/pattern-squiggly-line-top.svg" alt="bg_line_topright">
+  <img class="bg_line_bottomleft" src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="bg_line_bottomleft">
+  <img class="bg_pattern_circle1" src="assets/images/pattern-circle.svg" alt="bg_circle">
+  <img class="bg_pattern_circle2" src="assets/images/pattern-circle.svg" alt="bg_circle">
+
+  <main>
+    <header>
+    <h1 class="header_h1">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
+
+    <h2 class="header_h2">Secure your spot at next year's biggest coding conference.</h2>
+    </header>
+
+    <!-- Form -->
+
+    <div class="container">
+      <form>
+        <span class="file_upload_label">Upload Avatar</span><br>
+        <label class="file_upload_area" for="file_upload"><img class="file_upload_img" src="assets/images/icon-upload.svg"><span class="file_upload_text">Drag and drop or click to upload</span></label><br>
+        <input class="none" type="file" id="file_upload" name="file_upload">
+        
+        <span><img src="assets/images/icon-info.svg" alt="info_icon">Upload your photo (JPG or PNG, max size: 500KB).</span>
+
+        <span>Full Name</span>
+        <input class="" type="text" id="full_name" name="full_name">
+
+        <span>Email Address</span>
+        <input placeholder="example@email.com" type="text">
+        
+
+        GitHub Username
+        @yourusername
+          
+        Generate My Ticket
+        </span>
+      </form>
+    </div>
+  </main>
+  <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+
+  Congrats, <!-- Full Name -->! Your ticket is ready.
+
+  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+
+  Coding Conf
+  Jan 31, 2025 / Austin, TX
+
+  <!-- Generated tickets ends -->
+   <script src="main.js"></script>
+</body>
+</html>
