@@ -138,6 +138,17 @@ form {
     justify-content: center;
     align-items: center;
     gap: 16px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.file_upload_area:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.file_upload_area:focus {
+    outline: 1px solid var(--Neutral-500);
+    outline-offset: 2px;
 }
 
 .file_upload_img {
@@ -155,4 +166,24 @@ form {
     color: var(--Neutral-300);
     font-size: 18px;
     font-weight: 400;
+}
+
+.file_alligner {
+    margin-top: 12px;
+    width:100%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.file_info_img {
+    width: 16px;
+    height: 16px;
+}
+
+.file_info_text {
+    color: var(--Neutral-300);
+    font-size: 12px;
 }
