@@ -32,15 +32,15 @@
 
   <main>
     <header>
-    <h1 class="header_h1">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
+    <h1 id="header_h1" class="header_h1">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
 
-    <h2 class="header_h2">Secure your spot at next year's biggest coding conference.</h2>
+    <h2 id="header_h2" class="header_h2">Secure your spot at next year's biggest coding conference.</h2>
     </header>
 
     <!-- Form -->
 
     <div class="container">
-      <form>
+      <form id="form">
         <section>
 
           <span class="file_upload_label">Upload Avatar</span>
@@ -51,24 +51,40 @@
         </section>
 
         <section class="section">
-          <label class="name_text" for="full_name">Full Name</label>
-          <input class="name input_text" type="text" id="full_name" name="full_name">
+          <label class="inputH_text" for="full_name">Full Name</label>
+          <input class="input_text" type="text" id="full_name" name="full_name" maxlength="20">
         </section>
 
         <section class="section">
-          <label class="name_text" for="full_name">Email Address</label>
-          <input class="name input_text" placeholder="example@email.com"  type="text" id="full_name" name="full_name">
+          <label class="inputH_text" for="email">Email Address</label>
+          <input class="input_text" placeholder="example@email.com"  type="text" maxlength="50" name="email" id="email_address">
         </section>
 
         <section class="section">
-          <label class="name_text" for="full_name">GitHub Username</label>
-          <input class="name input_text" placeholder="@yourusername" type="text" id="full_name" name="full_name">
+          <label class="inputH_text" for="github_username">GitHub Username</label>
+          <input class="input_text" placeholder="@yourusername" type="text" name="github_username">
         </section>
             
-        <button class="button" onclick=""><span class="button_text">Generate My Ticket</span></button>
-        </span>
+        <button  type="button" class="button" onclick="ticketGenerator()"><span class="button_text">Generate My Ticket</span></button>       
       </form>
     </div>
+
+    <div style="display:none;" class="ticket_container">
+        <div class="ticket_container2">
+          <img src="assets/images/pattern-ticket.svg" alt="ticket_pattern" class="ticket_border">
+          <img src="assets/images/logo-mark.svg" alt="logo_mark" class="logo-mark">
+          <div class="event_info_container">
+              <h1 class="info_cont_heading">Coding Conf</h1>
+              <span class="info_cont_text">Jan 31, 2025 / Austin, TX</span>
+          </div>
+          <div class="ticket_container3">
+            <img src="assets/images/image-avatar.jpg">
+            <h2>isim</h2>
+            <img sr
+          </div>
+        </div>
+    </div>
+
   </main>
    <script src="main.js"></script>
 </body>

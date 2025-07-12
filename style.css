@@ -8,6 +8,13 @@ input::placeholder {
     font-family: "Inconsolata";
 }
 
+input[type="text"] {
+    color: var(--Neutral-0);
+    font-family: "Inconsolata";
+    font-size: 18px;
+    font-weight: normal;
+}
+
 body { 
     font-family:"Inconsolata";
     width: 100%;
@@ -235,7 +242,7 @@ form {
     z-index: 1;
 }
 
-.name_text {
+.inputH_text {
     color: var(--Neutral-0);
     font-size: 20px;
 
@@ -260,6 +267,7 @@ form {
 }
 
 .button {
+    cursor: pointer;
     margin-top: 24px;
     padding: 16px 24px;
     border-radius: 12px;
@@ -274,6 +282,59 @@ form {
     font-weight: 800;
     font-size: 20px;
 }
+
+.gradient {
+    background: linear-gradient(to right,var(--Orange-500),var(--Neutral-0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.orange_email {
+    color: var(--Orange-500);
+}
+
+.ticket_container {
+    width: 600px;
+    height: 280px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.ticket_container2 {
+    position:relative;
+    background-color: rgb(63, 45, 10);
+}
+
+.ticket_border {
+    position: absolute;
+}
+
+.logo-mark {
+    position: absolute;
+    top: 30px;
+    left: 24px;
+}
+
+.event_info_container {
+    margin-top: 12px;
+    display:inline-block;
+    width: 330px;
+    height: 78px;
+    margin-left: 84px;
+}
+
+.info_cont_heading {
+    margin: 0;
+    color: var(--Neutral-0);
+    font-size: 40px;
+}
+
+.info_cont_text {
+    color: var(--Neutral-300);
+    font-size: 18px;
+}
+
 
 
 
