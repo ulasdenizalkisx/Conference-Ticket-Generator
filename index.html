@@ -41,38 +41,35 @@
 
     <div class="container">
       <form>
-        <span class="file_upload_label">Upload Avatar</span>
-        <label class="file_upload_area" for="file_upload" tabindex="0"><img class="file_upload_img" src="assets/images/icon-upload.svg"><span class="file_upload_text">Drag and drop or click to upload</span></label>
-        <input class="none" type="file" id="file_upload" name="file_upload">
-        <div class="file_alligner"><img  class="file_info_img" src="assets/images/icon-info.svg" alt="info_icon"><span class="file_info_text">Upload your photo (JPG or PNG, max size: 500KB).</span></div>
+        <section>
 
-        <span>Full Name</span>
-        <input class="" type="text" id="full_name" name="full_name">
-
-        <span>Email Address</span>
-        <input placeholder="example@email.com" type="text">
+          <span class="file_upload_label">Upload Avatar</span>
+          <label class="file_upload_area" for="file_upload" tabindex="0"><img id="500kb_photo" class="file_upload_img" src="assets/images/icon-upload.svg"><span id="fileUploadText" class="file_upload_text">Drag and drop or click to upload</span></label>
+          <input class="none" type="file" id="file_upload" name="file_upload">
+          <div class="file_alligner"><img id="info_img" class="file_info_img" src="assets/images/icon-info.svg" alt="info_icon"><span id="span" class="file_info_text">Upload your photo (JPG or PNG, max size: 500KB).</span></div>
         
+        </section>
 
-        GitHub Username
-        @yourusername
-          
-        Generate My Ticket
+        <section class="section">
+          <label class="name_text" for="full_name">Full Name</label>
+          <input class="name input_text" type="text" id="full_name" name="full_name">
+        </section>
+
+        <section class="section">
+          <label class="name_text" for="full_name">Email Address</label>
+          <input class="name input_text" placeholder="example@email.com"  type="text" id="full_name" name="full_name">
+        </section>
+
+        <section class="section">
+          <label class="name_text" for="full_name">GitHub Username</label>
+          <input class="name input_text" placeholder="@yourusername" type="text" id="full_name" name="full_name">
+        </section>
+            
+        <button class="button" onclick=""><span class="button_text">Generate My Ticket</span></button>
         </span>
       </form>
     </div>
   </main>
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
    <script src="main.js"></script>
 </body>
 </html>

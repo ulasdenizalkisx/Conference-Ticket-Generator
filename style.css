@@ -2,9 +2,16 @@
 
 * {box-sizing: border-box;}
 
+input::placeholder {
+    color: var(--Neutral-300);
+    font-size: 18px;
+    font-family: "Inconsolata";
+}
+
 body { 
     font-family:"Inconsolata";
-    color: white;
+    width: 100%;
+    height: 100%;
 }
 
 /* Colors */
@@ -26,8 +33,8 @@ body {
 
 .main_bg {
     position:absolute;
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 1100px;
     z-index: -1;
 }
 
@@ -35,7 +42,7 @@ body {
     position:absolute; 
     top: 0;
     width:100vw; 
-    height:auto;
+    height:1100px;
     z-index: -1;
 }
 
@@ -187,3 +194,86 @@ form {
     color: var(--Neutral-300);
     font-size: 12px;
 }
+
+.file_info_text_error {
+    color: var(--Orange-500);
+    font-size: 12px;
+}
+
+.alignerDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.rem_chg_buttons1 {
+    cursor: pointer;
+    padding: 4px 8px;
+    background-color: rgba(255,255,255,0.1);
+    font-family: "Inconsolata";
+    color: var(--Neutral-300);
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+.rem_chg_buttons {
+    cursor: pointer;
+    padding: 4px 8px;
+    background-color: rgba(255,255,255,0.1);
+    font-family: "Inconsolata";
+    color: var(--Neutral-300);
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.name_text {
+    color: var(--Neutral-0);
+    font-size: 20px;
+
+}
+
+.section {
+    margin-top: 24px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.input_text {
+    width: 100%;
+    height: 54px;
+    padding: 0 16px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--Neutral-500);
+    backdrop-filter: blur(5px);
+}
+
+.button {
+    margin-top: 24px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: var(--Orange-500);
+    border: none;
+    width: 100%;
+}
+
+.button_text {
+    color: var(--Neutral-900);
+    font-family:"Inconsolata";
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+
