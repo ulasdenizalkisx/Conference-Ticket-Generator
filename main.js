@@ -7,6 +7,22 @@ var full_name;
 var email;
 
 var file;
+
+function removeImage(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const photo = document.getElementById('500kb_photo');
+    photo.src = 'assets/images/icon-upload.svg';
+    photo.style.padding = '10px';
+    document.getElementById('fileUploadText').innerText ='Drag and drop or click to upload';
+
+    const span = document.getElementById('span');
+    const img = document.getElementById('info_img');
+    span.className = 'file_info_text';
+    span.innerText = 'Upload your photo (JPG or PNG, max size: 500KB).';
+    img.src = 'assets/images/icon-info.svg';
+}
+
 document.getElementById('file_upload').addEventListener('change', function () {
     file = this.files[0];
     const Size = 500 * 1024;
@@ -30,10 +46,12 @@ document.getElementById('file_upload').addEventListener('change', function () {
             photo.style.padding = '0';
             photo.src = tempURL;
 
-            document.getElementById('fileUploadText').innerHTML = '<div id="alignerdiv" class="alignerDiv"><button class="rem_chg_buttons1">Remove image</button><button id="img_change_button" class="rem_chg_buttons">Change image</button></div>';
+            document.getElementById('fileUploadText').innerHTML = '<div id="alignerdiv" class="alignerDiv"><button onclick="removeImage(event)" type="button" class="rem_chg_buttons1">Remove image</button><button id="img_change_button" class="rem_chg_buttons">Change image</button></div>';
         }
     }
 });
+
+
 
 document.getElementById('full_name').addEventListener('change',function () {
     full_name = document.getElementById('full_name').value;

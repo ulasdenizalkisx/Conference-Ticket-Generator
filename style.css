@@ -542,12 +542,14 @@ html, body {
     }
 
     .logo-mark {
+        left: 16px;
+        top: 20px;
         width:29px;
         height: 29px;
     }
 
     .event_info_container {
-        margin-top: 16px;
+        margin-top: 10px;
         display:inline-block;
         width: 177px;
         height: 51px;
