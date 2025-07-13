@@ -187,7 +187,7 @@ form {
     width:100%;
     display:flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content:flex-start;
     align-items: center;
     gap: 8px;
 }
@@ -195,6 +195,7 @@ form {
 .file_info_img {
     width: 16px;
     height: 16px;
+    margin-bottom: 3px;
 }
 
 .file_info_text {
@@ -295,15 +296,26 @@ form {
 }
 
 .ticket_container {
+    display: none;
+    position: relative;
     width: 600px;
     height: 280px;
     margin: auto;
     margin-top: 100px;
+    backdrop-filter: blur(40px);
 }
 
 .ticket_container2 {
     position:relative;
-    background-color: rgb(63, 45, 10);
+}
+
+.ticket_container3 {
+    margin-left: 24px;
+    margin-top: 74px;
+    display:flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+
 }
 
 .ticket_border {
@@ -333,6 +345,49 @@ form {
 .info_cont_text {
     color: var(--Neutral-300);
     font-size: 18px;
+}
+
+.ticket_avatar {
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+}
+
+.ticket_name {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--Neutral-0);
+}
+
+.email_ticket {
+    font-size: 20px;
+    color: var(--Neutral-300);
+}
+
+.alligner_div {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.ticket_number {
+    color: var(--Neutral-500);
+    font-size: 30px;
+    display:inline-block;
+    position: absolute;
+    right: 36px;
+    bottom: 97px;
+    writing-mode: vertical-rl;
+}
+
+.error_email {
+    display:none;
+}
+
+.email_error_icon1 {
+    margin-bottom: 4px;
 }
 
 

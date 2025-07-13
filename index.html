@@ -59,17 +59,18 @@
           <label class="inputH_text" for="email">Email Address</label>
           <input class="input_text" placeholder="example@email.com"  type="text" maxlength="50" name="email" id="email_address">
         </section>
+        <div id="error_email" class="file_alligner"><img id="email_error_icon" src=""><span id="email_error_text" class="file_info_text_error"></span></div>
 
         <section class="section">
           <label class="inputH_text" for="github_username">GitHub Username</label>
           <input class="input_text" placeholder="@yourusername" type="text" name="github_username">
         </section>
             
-        <button  type="button" class="button" onclick="ticketGenerator()"><span class="button_text">Generate My Ticket</span></button>       
+        <button type="button" class="button" onclick="ticketGenerator()"><span class="button_text">Generate My Ticket</span></button>       
       </form>
     </div>
 
-    <div style="display:none;" class="ticket_container">
+    <div class="ticket_container">
         <div class="ticket_container2">
           <img src="assets/images/pattern-ticket.svg" alt="ticket_pattern" class="ticket_border">
           <img src="assets/images/logo-mark.svg" alt="logo_mark" class="logo-mark">
@@ -78,11 +79,18 @@
               <span class="info_cont_text">Jan 31, 2025 / Austin, TX</span>
           </div>
           <div class="ticket_container3">
-            <img src="assets/images/image-avatar.jpg">
-            <h2>isim</h2>
-            <img sr
+            
+            <img class="ticket_avatar" src="assets/images/image-avatar.jpg">
+            <div class="info_container">
+              <h2 class="ticket_name">Jonatan Kristof</h2>
+              <div class="alligner_div">
+                <img src="assets/images/github_icon.svg">
+                <span class="email_ticket">@jonatankristof0101</span>
+              </div>
+            </div>
           </div>
         </div>
+        <span class="ticket_number">#01609</span>
     </div>
 
   </main>
