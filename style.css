@@ -99,6 +99,7 @@ body {
 /* Header */
 
 .header_alligner {
+    margin-top: 50px;
     display:flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -464,12 +465,20 @@ html, body {
         left: -50px;
     }
 
+    .header_alligner {
+    margin-top: 30px;
+}
+
 }
 
 @media screen and (max-width: 500px) {
 
     #desktop_bg {
         display: none;
+    }
+
+     .header_alligner {
+    margin-top: 10px;
     }
 
     body {
