@@ -10,8 +10,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
@@ -22,7 +21,9 @@
 <body>
 
   <!-- Background Images -->
-  <img class="main_bg" src="assets/images/background-desktop.png" alt="main_bg">
+  <img id="mobile_bottom_line" class="none" src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg">
+  <img id="tablet_bg" class="main_bg none" src="assets/images/background-tablet.png" alt="tablet_bg">
+  <img id="desktop_bg" class="main_bg" src="assets/images/background-desktop.png" alt="main_bg">
   <img class="bg_lines" src="assets/images/pattern-lines.svg" alt="bg_lines">
   <img class="logo_full" src="assets/images/logo-full.svg" alt="logo_full">
   <img class="bg_line_topright" src="assets/images/pattern-squiggly-line-top.svg" alt="bg_line_topright">
@@ -31,11 +32,13 @@
   <img class="bg_pattern_circle2" src="assets/images/pattern-circle.svg" alt="bg_circle">
 
   <main>
-    <header>
-    <h1 id="header_h1" class="header_h1">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
+    <div class="header_alligner">
+      <header>
+      <h1 id="header_h1" class="header_h1">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
 
-    <h2 id="header_h2" class="header_h2">Secure your spot at next year's biggest coding conference.</h2>
-    </header>
+      <h2 id="header_h2" class="header_h2">Secure your spot at next year's biggest coding conference.</h2>
+      </header>
+    </div>
 
     <!-- Form -->
 
@@ -86,7 +89,7 @@
             <div class="info_container">
               <h2 id="ticket_name_text" class="ticket_name">Jonatan Kristof</h2>
               <div class="alligner_div">
-                <img src="assets/images/github_icon.svg">
+                <img class="github_icon" src="assets/images/github_icon.svg">
                 <span id="github_username_text" class="email_ticket">@jonatankristof0101</span>
               </div>
             </div>

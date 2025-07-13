@@ -23,8 +23,8 @@ html,body {
 body { 
     background: url('assets/images/background-desktop.png'), url('assets/images/pattern-lines.svg') center center;
     font-family:"Inconsolata";
-    min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* Colors */
@@ -52,8 +52,10 @@ body {
 }
 
 .bg_lines {
-    position:absolute; 
-    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
     z-index: -1;
     top: 0;
 }
@@ -62,7 +64,7 @@ body {
     position: absolute;
     top: 20px;
     left: 50%;
-    transform: translate(-50%,1rem);
+    transform: translate(-50%,20px);
     z-index: -1;
 }
 
@@ -95,6 +97,13 @@ body {
 /* Inner Section */
 
 /* Header */
+
+.header_alligner {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content:center;
+}
 
 header {
     text-align: center;
@@ -399,11 +408,203 @@ form {
     writing-mode: vertical-rl;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
 /* Responsive */
 
-@media screen and (max-width:1024px) {
-    
+
+@media screen and (max-width:1100px) {
+    #desktop_bg {
+        display: none;
+    }
+
+    body {
+        background-image: url(assets/images/background-desktop.png);
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    .bg_line_topright {
+        margin-top: 0;
+    }
+
+    .bg_lines {
+        height: 500px;
+    }
+
+    .header_h1 {
+        margin-top: 60px;
+    }
+
+    .bg_line_bottomleft {
+        display: none;
+    }
+
+    #mobile_bottom_line {
+        display: block;
+        position:absolute;
+        bottom:0;
+        left:0;
+        z-index: -1;
+    }
+
+    .bg_pattern_circle1 {
+        right:-100px;
+    }
+
+    .bg_pattern_circle2 {
+        left: -50px;
+    }
+
 }
+
+@media screen and (max-width: 500px) {
+
+    #desktop_bg {
+        display: none;
+    }
+
+    body {
+        overflow: hidden;
+        background-image: url(assets/images/background-desktop.png);
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    form {
+        width: 340px;
+    }
+
+    .header_h1 {
+        font-size: 30px;
+    }
+
+    .header_h2 {
+        font-size: 20px;
+    }
+
+    .bg_line_topright {
+        margin-top: 0;
+    }
+
+
+    .header_h1 {
+        margin-top: 40px;
+    }
+
+    .bg_line_bottomleft {
+        display: none;
+    }
+
+    #mobile_bottom_line {
+        display: block;
+        position:absolute;
+        bottom:0;
+        left:0;
+        width: 300px;
+        height: 210px;
+        z-index: -1;
+    }
+
+    .bg_pattern_circle1 {
+        position: absolute;
+        top: 548px;
+        right: -50px;
+        width: 107px;
+        height: 107px;
+    }
+
+    .bg_pattern_circle2 {
+        position: absolute;
+        top: -20px;
+        left: -40px;
+        width: 107px;
+        height: 107px;
+    }
+
+    .ticket_container {
+        width: 340px;
+        height: 160px;
+    }
+
+    .ticket_border {
+        width: 340px;
+        height: 160px;
+    }
+
+    .logo-mark {
+        width:29px;
+        height: 29px;
+    }
+
+    .event_info_container {
+        margin-top: 16px;
+        display:inline-block;
+        width: 177px;
+        height: 51px;
+        margin-left: 57px;
+    }
+
+    .info_cont_heading {
+        font-size: 24px;
+    }
+
+    .info_cont_text {
+        font-size: 14px;
+    }
+
+    .ticket_container3 {
+    margin-left: 16px;
+    margin-top: 27px;
+    display:flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+    }
+
+    .ticket_avatar {
+        width: 45px;
+        height: 45px;
+    }
+
+    .ticket_name {
+        font-size: 20px;
+    }
+
+    .email_ticket {
+        font-size: 14px;
+    }
+
+    .alligner_div {
+        gap:4px;
+    }
+
+    .github_icon {
+        width: 16px;
+        height: 16px;
+    }
+
+     .ticket_number {
+        font-size: 22px;
+        right: 16px;
+        top: 50px;
+        
+    }
+}
+
+
+
+
+
+
 
 
 
