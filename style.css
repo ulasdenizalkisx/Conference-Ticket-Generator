@@ -99,7 +99,6 @@ body {
 /* Header */
 
 .header_alligner {
-    margin-top: 130px;
     display:flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -426,10 +425,6 @@ html, body {
         display: none;
     }
 
-    .header_alligner {
-        margin-top: 130px;
-    }    
-
     body {
         background-image: url(assets/images/background-desktop.png);
         background-position: center center;
@@ -605,10 +600,6 @@ html, body {
         top: 50px;
         
     }
-
-    .header_alligner {
-        margin-top: 97px;
-    } 
 }
 
 
