@@ -39,7 +39,7 @@
 
     <!-- Form -->
 
-    <div class="container">
+    <div id="form_main" class="container">
       <form id="form">
         <section>
 
@@ -54,23 +54,25 @@
           <label class="inputH_text" for="full_name">Full Name</label>
           <input class="input_text" type="text" id="full_name" name="full_name" maxlength="20">
         </section>
+        <div id="error_name" class="file_alligner"><img id="name_error_icon" src=""><span id="name_error_text" class="file_info_text_error"></span></div>
 
         <section class="section">
-          <label class="inputH_text" for="email">Email Address</label>
+          <label class="inputH_text" for="email_address">Email Address</label>
           <input class="input_text" placeholder="example@email.com"  type="text" maxlength="50" name="email" id="email_address">
         </section>
         <div id="error_email" class="file_alligner"><img id="email_error_icon" src=""><span id="email_error_text" class="file_info_text_error"></span></div>
 
         <section class="section">
-          <label class="inputH_text" for="github_username">GitHub Username</label>
-          <input class="input_text" placeholder="@yourusername" type="text" name="github_username">
+          <label class="inputH_text" for="github_input">GitHub Username</label>
+          <input class="input_text" id="github_input" placeholder="@yourusername" type="text" name="github_username">
         </section>
+        <div id="error_github" class="file_alligner"><img id="github_error_icon" src=""><span id="github_error_text" class="file_info_text_error"></span></div>
             
         <button type="button" class="button" onclick="ticketGenerator()"><span class="button_text">Generate My Ticket</span></button>       
       </form>
     </div>
 
-    <div class="ticket_container">
+    <div id="ticket_main" class="ticket_container">
         <div class="ticket_container2">
           <img src="assets/images/pattern-ticket.svg" alt="ticket_pattern" class="ticket_border">
           <img src="assets/images/logo-mark.svg" alt="logo_mark" class="logo-mark">
@@ -80,17 +82,17 @@
           </div>
           <div class="ticket_container3">
             
-            <img class="ticket_avatar" src="assets/images/image-avatar.jpg">
+            <img id="ticket_photo" class="ticket_avatar" src="assets/images/image-avatar.jpg">
             <div class="info_container">
-              <h2 class="ticket_name">Jonatan Kristof</h2>
+              <h2 id="ticket_name_text" class="ticket_name">Jonatan Kristof</h2>
               <div class="alligner_div">
                 <img src="assets/images/github_icon.svg">
-                <span class="email_ticket">@jonatankristof0101</span>
+                <span id="github_username_text" class="email_ticket">@jonatankristof0101</span>
               </div>
             </div>
           </div>
         </div>
-        <span class="ticket_number">#01609</span>
+        <span id="ticket_number" class="ticket_number"></span>
     </div>
 
   </main>
