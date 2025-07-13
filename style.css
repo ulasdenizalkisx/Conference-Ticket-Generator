@@ -21,7 +21,7 @@ html,body {
 }
 
 body { 
-    background: url('assets/images/background-desktop.png'), url('assets/images/pattern-lines.svg') center center;
+    background: url('assets/images/background-desktop.png');
     font-family:"Inconsolata";
     position: relative;
     overflow-x: hidden;
@@ -52,13 +52,15 @@ body {
 }
 
 .bg_lines {
-    max-height: 800px;
-    position:absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,0);
-    z-index: -1;
-    top: 0;
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+
 }
 
 .logo_full {
@@ -439,7 +441,7 @@ html, body {
     }
 
     .bg_lines {
-        max-height: 700px;
+        max-height: 800px;
     }
 
     .header_h1 {
