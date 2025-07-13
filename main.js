@@ -84,6 +84,11 @@ document.addEventListener('click', function(event) {
 
 function ticketGenerator() {
         if (file_empty == false) {
+            const img = document.getElementById('info_img');
+            img.src = 'assets/images/icon-info.svg';
+            const span = document.getElementById('span');
+            span.className = 'file_info_text';
+            span.innerHTML = 'Upload your photo (JPG or PNG, max size: 500KB).';
         if (name_empty) {
             const icon = document.getElementById('name_error_icon');
             icon.src = 'assets/images/info_icon_error.png';
@@ -143,5 +148,14 @@ function ticketGenerator() {
         for (let x of ticket_num) {
             document.getElementById('ticket_number').innerText += x;
         }
+    }
+    else {
+        const img = document.getElementById('info_img');
+        img.src = 'assets/images/info_icon_error.png';
+        span.className = 'file_info_text_error';
+        span.innerText = 'Photo must be uploaded. Please upload a photo under 500KB.';
+        img.src = 'assets/images/info_icon_error.png';
+        file_empty = true;
+        this.value = '';
     }
 }

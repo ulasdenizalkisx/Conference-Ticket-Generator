@@ -52,6 +52,7 @@ body {
 }
 
 .bg_lines {
+    max-height: 800px;
     position:absolute;
     top: 0;
     left: 50%;
@@ -438,7 +439,7 @@ html, body {
     }
 
     .bg_lines {
-        height: 500px;
+        max-height: 700px;
     }
 
     .header_h1 {
